@@ -1,0 +1,618 @@
+<!DOCTYPE htmml>
+<html eng="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loreowl𓅓</title>
+    <link rel="stylesheet" href="style.css">
+    <div id="loadingScreen">
+        <div id="loadingText"><b>LoreOwl𓅓</b></div>
+    </div>
+    <div class="Menu">
+        <h1>Loreowl𓅓</h1>
+        <ul class="Menuul">
+            <li><a href="./loginpage.html" style="color: black;">Login</a></li>
+            <li><a href="./cadastrar.html" style="color: black;">Cadastrar</a></li>
+            <li><a href="#Sobre" target="_self" style="color: black;">Sobre</a></li>
+            <li><a href="#Parceiros" style="color: black;">Parceiros</a></li>
+            <li><a href="#" id="logoutBtn" style="display:none; color:red;">Logout</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="searchBox" class="search-input" placeholder="Buscar livros...">
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+    </div>
+    
+</head>
+<body>
+
+    <main class="Principal">
+        <section>
+            <h1 class="rgb-text">Seja bem-vindo!</h1>
+            <p>Espero que encontre o que busca!</p>
+            <div class="img">
+                <img src="./WhatsApp_Image_2024-10-19_at_12.40.11-removebg-preview.png" alt="" width="250px" height="220px" >
+            </div>
+            <br><br>
+            <h1>Lançamentos</h1>
+            <div class="books-container">
+                <button class="button" id="prevButton1">↤</button>
+                
+                <div class="BOOKS" id="booksContainer1">
+                    <div class="l1"onclick="openBookPage('A Arte da Guerra', 'Sun Tzu', '29.90', './aaed2f0c9de630f0e83c1a4da57bd3b5.webp')">
+                        <img src="./aaed2f0c9de630f0e83c1a4da57bd3b5.webp" alt="A Arte da Guerra" width="250px">
+
+                            <h2>A Arte da Guerra</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="./ce0dfca32f7a01f91275d9284670f7eb.webp" alt="Platão" width="250px">
+                        <a href="https://www.magazineluiza.com.br/livro-platao/p/akdf4dd05e/li/libi/">
+                            <h2>Platão</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="./O-PRINCIPE-capa-scaled.jpg" alt="O Príncipe" width="250px">
+                        <a href="https://www.martinclaret.com.br/livro/o-principe-2/">
+                            <h2>O Príncipe</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="https://m.media-amazon.com/images/I/51vgAvVpPiL.jpg" alt="Bíblia Sagrada" width="270px">
+                        <a href="https://www.mercadolivre.com.br/biblia-rcm-trinitariana-acf-letra-gigante-editora-sbtb/p/MLB20808066">
+                            <h2>Bíblia Sagrada</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="./6e0cc8bdc6dae3da2ff640f929261cfd.webp" alt="Odisseia" width="250px">
+                        <a href="https://www.pontofrio.com.br/livro-fisico-a-odisseia-de-homero-texto-integral-1510274635/p/1510274635">
+                            <h2>Odisseia</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="./9e11c08aee2cca10e7a147459b39700f.webp" alt="Ilíada" width="250px">
+                        <a href="https://www.magazineluiza.com.br/livro-iliada/p/228539700/li/llit/">
+                            <h2>Ilíada</h2>
+                        </a>
+                    </div>
+                </div>
+                <button class="button" id="nextButton1">↦</button>
+            </div>
+        
+            <h1>Fantasia</h1>
+            <div class="container">
+                <button class="button" id="prevButton2">↤</button>
+                <div class="BOOKS" id="booksContainer2">
+                    <!-- Fantasia -->
+                    <div class="l1">
+                        <img src="https://a-static.mlcdn.com.br/800x560/livro-as-cronicas-de-narnia-volume-unico/olistsp/osplbmtnox80xv3h/5ae043fe928949fb5759725383feba94.jpg" alt="As Crônicas de Nárnia" width="250px">
+                        <a href="https://encurtador.com.br/WlZKK">
+                            <h2>As Crônicas de Nárnia</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="https://m.media-amazon.com/images/I/A1P+ndx6rAL._SY425_.jpg" alt="A Chama de Ember" width="250px">
+                        <a href="https://encurtador.com.br/h4hKd">
+                            <h2>A Chama de Ember</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="https://m.media-amazon.com/images/I/81P5MhGTrpL._SL1500_.jpg" alt="O Acordo com o Rei Elfo" width="250px">
+                        <a href="https://encurtador.com.br/iXY9F">
+                            <h2>O Acordo com o Rei Elfo</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="https://m.media-amazon.com/images/I/81kL9MR9lbL._AC_UL320_.jpg" alt="Volume 3 de Zach Bell" width="250px">
+                        <a href="https://encurtador.com.br/a1h8A">
+                            <h2>Volume 3 de Gash Bell</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="https://m.media-amazon.com/images/I/91ZVONTZJGL._SY425_.jpg" alt="Volume 4 de Demon Slayer" width="250px">
+                        <a href="https://www.amazon.com.br/Demon-Slayer-Kimetsu-Yaiba-Vol/dp/6555120304/ref=sr_1_6?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3JT21T805I9EQ&dib=eyJ2IjoiMSJ9.2NWZQiMzO1bknh7EbimsK0fZqUsXSywA2srEp30Y9FhZ4-Xc7n9rzbfeiCKqpAP6fOc4bUjmjjiZ5ft55uJzpqkeFFCQz3TzbTP1yNEUrUqKxC-EqlCYxqRERoE4BVYDFSgKvzXecJ5b2RjekivvCvt9i4ZAubpgfHtZHu_v0JWboEQHwpamIZmOh8-arESSjsEPdT-xxQIA4yDY-TrbAdMRoxfxCjcjEQgRPbslhjbmlSZwQopFoPrVwypNhijCaQd4Xvq6gRzSHFOgJ1_dvr85KMHnokvdOTenVAM9FxU.QalJy8aQ5gHPA5H12KyuguOWz6jlA33CBTYfCEa3Shs&dib_tag=se&keywords=Demon+slayer&qid=1733667802&sprefix=demon+slayer%2Caps%2C251&sr=8-6">
+                            <h2>Volume 4 de Demon Slayer</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="https://m.media-amazon.com/images/I/51g8Yis6fzL._SY445_SX342_.jpg" alt="Volume 1 de Final Fantasy" width="250px">
+                        <a href="https://www.amazon.com.br/Final-Fantasy-Lost-Stranger-Vol/dp/6555942746/ref=sr_1_28?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2CW2LS2PX07MP&dib=eyJ2IjoiMSJ9.S3teHRkWlXst8WUay9d5o5yKRnMKxEkdm6k5oJPvo4Uln7uLrlC6WOYhiRr0fTzGGXVAK5ljiq4AOz5QTWHMZsAUT9HJBYZbTsCTGhHIj4UegruXToWYAi3guz_ORDE2suALxQ1rfhnfvoIIL1gogjYuNgIjJ9QTLi4qUBQTjV_VHuo3Frtieqjc_IzG4FV4SVisKHv5N8YjPbpucnD5fhgOLazZ07YYNkq9JhMtkk01VLhSLzL1sSQw6GViFiSNkDCjuaJnpfyFfHZGtzduLQlTdnffSswfpO203NwLEcY.1UpMs8Uy9p-rlTgNN_pQe5yrRxjoE6148ATHIb0wFRo&dib_tag=se&keywords=Final+fantasy&qid=1733667893&sprefix=final+fantasy%2Caps%2C243&sr=8-28">
+                            <h2>Volume 1 de Final Fantasy</h2>
+                        </a>
+                    </div>
+                </div>
+                <button class="button" id="nextButton2">↦</button>
+            </div>
+        
+            <h1>Terror</h1>
+            <div class="container">
+                <button class="button" id="prevButton3">↤</button>
+                <div class="BOOKS" id="booksContainer3">
+                    <!-- Terror -->
+                    <div class="l1">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_651777-MLB46547775208_062021-O.webp" alt="Contos de Terror" width="250px">
+                        <a href="https://acesse.one/tYys5">
+                            <h2>Contos de Terror</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="https://th.bing.com/th/id/OIP.YLjadM_1AYgYOswFbBuw2QAAAA?rs=1&pid=ImgDetMain" alt="Estou Atrás de Você" width="250px">
+                        <a href="https://l1nk.dev/dPCjr">
+                            <h2>Estou Atrás de Você</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="https://www.sociedadenerd.com.br/wp-content/uploads/2023/04/livro-O-Chamado-de-Cthulhu-683x1024.jpg" alt="O Chamado de Cthulhu" width="250px">
+                        <a href="https://acesse.one/D5h8i">
+                            <h2>O Chamado de Cthulhu</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="https://th.bing.com/th/id/OIP.22TbIiA7c9GryhA1g-ODCgHaK9?rs=1&pid=ImgDetMain" alt="Imperiais" width="250px">
+                        <a href="https://acesse.one/u6RnX">
+                            <h2>Imperiais</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="https://dcdn-us.mitiendanube.com/stores/005/277/283/products/1-d8dbecbe05db3ba67717334915875312-1024-1024.webp" alt="Imperiais" width="250px">
+                        <a href="https://encurtador.com.br/lQ35J">
+                            <h2>A tragédia de MACBETCH</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="https://imgv2-2-f.scribdassets.com/img/document/688064400/original/5aaa276f27/1702397513?v=1" alt="Imperiais" width="250px">
+                        <a href="https://encurtador.com.br/4PJX0">
+                            <h2>Ninguem vai te ouvir gritar</h2>
+                        </a>
+                    </div>
+                    <div class="l1">
+                        <img src="https://m.media-amazon.com/images/I/81u7cHnV+KL._SL1500_.jpg" alt="Imperiais" width="250px">
+                        <a href="https://www.magazineluiza.com.br/livro-a-ilha-das-almas-selvagens/p/ge8b6581c9/li/llit/">
+                            <h2>A ilha das almas selvagens</h2>
+                        </a>
+                    </div>
+                </div>
+                <button class="button" id="nextButton3">↦</button>
+            </div>
+
+          <!-- Container 4 - Drama -->
+          <h1>Drama</h1>
+     <div class="container">
+        
+        <button class="button" id="prevButton4">↤</button>
+        <div class="BOOKS" id="booksContainer4">
+            <div class="l1">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_989146-MLU77723053267_072024-F.webp" alt="A arte da guerra" width="250px">
+                <a href="https://l1nk.dev/B8hBf">
+                    <h2 style="color: black;">O morro dos ventos uivantes</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_927426-MLU50535010087_062022-F.webp" alt="Platão" width="250px">
+                <a href="https://acesse.one/GtAom">
+                    <h2 style="color: black;">Os miseráveis</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_970788-MLB46598459639_072021-F.webp" alt="O príncipe" width="270px">
+                <a href="https://acesse.one/6p6K5">
+                    <h2 style="color: black;">A revolução dos bichos</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://th.bing.com/th/id/R.dadc528c8178bddf6d3104415dab47de?rik=9zsbuOytFeKjig&riu=http%3a%2f%2fstatic.fnac-static.com%2fmultimedia%2fPT%2fimages_produits%2fPT%2fZoomPE%2f4%2f1%2f3%2f9789722000314.jpg&ehk=tJQP7bAkoucPC%2b0aNA4RBeil%2f30HnQQyMxtewLxIkYM%3d&risl=&pid=ImgRaw&r=0" alt="Bíblia Sagrada" width="240px">
+                <a href="https://encr.pw/R3fl9">
+                    <h2 style="color: black;">Cem anos de solidão</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_612685-MLU69871993230_062023-F.webp" alt="Odisseia" width="250px">
+                <a href="https://acesse.one/zPVz6">
+                    <h2 style="color: black;">A metamorfose</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://th.bing.com/th/id/OIP.1Vd4RqiniFcROkWIrQbaJwHaJl?rs=1&pid=ImgDetMain" alt="Ilíada" width="270px">
+                <a href="https://acesse.one/CUhnM">
+                    <h2 style="color: black;"> O sol é para todos</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://th.bing.com/th?id=OPHS.d01VgdGz3uYplQ474C474&w=300&h=300&o=5&dpr=1.1&pid=21.1" alt="Ilíada" width="275px">
+                <a href="https://l1nk.dev/e5l7h">
+                    <h2 style="color: black;">Volume 1 Tokyo Ghoul</h2>
+                </a>
+            </div>
+        </div>
+        <button class="button" id="nextButton4">↦</button>
+    </div>
+
+    <!-- Container 5 - Ficção -->
+    <h1>Ficção</h1>
+    <div class="container">
+      
+        <button class="button" id="prevButton5">↤</button>
+        <div class="BOOKS" id="booksContainer5">
+            <div class="l1">
+                <img src="https://th.bing.com/th/id/OIP.ULeQI9-bgpTKs4brlmzw1AHaLE?rs=1&pid=ImgDetMain" alt="A arte da guerra" width="250px">
+                <a href="https://encurtador.com.br/eJepW">
+                    <h2 style="color: black;"> Volume 19 Attack on titan</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://media.senscritique.com/media/000015332347/source_big/Akira.jpg" alt="Platão" width="250px">
+                <a href="https://encurtador.com.br/wBu9f">
+                    <h2 style="color: black;">Akira</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://i.pinimg.com/736x/08/53/02/08530277988c7b5d4363645e4c8765af--ghost-in-the-shell-ghosts.jpg" alt="O príncipe" width="250px">
+                <a href="https://encurtador.com.br/Afi4e">
+                    <h2 style="color: black;">Volume 1 The ghost in the shell</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_825570-MLU50450120793_062022-F.webp" alt="Bíblia Sagrada" width="255px">
+                <a href="">
+                    <h2 style="color: black;">Volume 57 de One piece</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://m.media-amazon.com/images/I/71lT36JaUqL._SY425_.jpg" alt="Odisseia" width="250px">
+                <a href="https://www.pontofrio.com.br/livro-fisico-a-odisseia-de-homero-texto-integral-1510274635/p/1510274635">
+                    <h2 style="color: black;"> Volume 10 Neon Genesis Evangelion</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://media.senscritique.com/media/000018352089/source_big/BLAME_Edition_Deluxe_tome_1.jpg" alt="Ilíada" width="250px">
+                <a href="https://encurtador.com.br/ncGQN">
+                    <h2 style="color: black;">Volume 1 Blame!</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://a-static.mlcdn.com.br/800x560/livro-as-cronicas-de-narnia-volume-unico/olistsp/osplbmtnox80xv3h/5ae043fe928949fb5759725383feba94.jpg" alt="As Crônicas de Nárnia" width="250px">
+                <a href="https://encurtador.com.br/WlZKK">
+                    <h2>As Crônicas de Nárnia</h2>
+                </a>
+            </div>
+        </div>
+        <button class="button" id="nextButton5">↦</button>
+    </div>
+    
+    <!-- Container 6 - Romance -->
+    <h1>Romance</h1>
+    <div class="container">
+      
+        <button class="button" id="prevButton6">↤</button>
+        <div class="BOOKS" id="booksContainer6">
+            <div class="l1">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/91wc-3d0mEL.jpg" alt="A arte da guerra" width="250px">
+                <a href="https://www.magazineluiza.com.br/livro-a-arte-da-guerra/p/bf75bc4b9k/li/liaj/?seller_id=olistplus">
+                    <h2 style="color: black;">Orgulho e preconceito</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_889524-MLU71324465531_082023-O.webp" alt="Platão" width="250px">
+                <a href="https://www.magazineluiza.com.br/livro-platao/p/akdf4dd05e/li/libi/?seller_id=artclubbooks">
+                    <h2 style="color: black;">P.S eu te amo</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="data:image/jpeg;base64,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" alt="O príncipe" width="250px">
+                <a href="https://www.martinclaret.com.br/livro/o-principe-2/">
+                    <h2 style="color: black;">Volume 6 Horimura</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://th.bing.com/th/id/OIP.gdLTbPcZMHUXljoOkj0q-QAAAA?w=129&h=195&c=7&r=0&o=5&pid=1.7" alt="Bíblia Sagrada" width="250px">
+                <a href="https://www.mercadolivre.com.br/biblia-rcm-trinitariana-acf-letra-gigante-editora-sbtb/p/MLB20808066">
+                    <h2 style="color: black;">Um dia</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://1.bp.blogspot.com/--Z2RZe4dQa4/YV7BjoIBU2I/AAAAAAAAA0Q/o4IoJ9xfbMgEnHuZIMGTLNy0Swch6YxZgCLcBGAsYHQ/s800/1366212_0.jpg" alt="Odisseia" width="250px">
+                <a href="https://www.pontofrio.com.br/livro-fisico-a-odisseia-de-homero-texto-integral-1510274635/p/1510274635">
+                    <h2 style="color: black;">O amor nos tempos de cólera</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://www.educacaoetransformacao.com.br/wp-content/uploads/2020/03/Dom-Casmurro-Capa-da-obra-1899.jpg" alt="Ilíada" width="250px">
+                <a href="https://www.magazineluiza.com.br/livro-iliada/p/228539700/li/llit/?seller_id=olistplus">
+                    <h2 style="color: black;">Dom Casmurro</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://www.bubok.pt/libro/portadaLibro/4222/6/Memorias-postumas-de-Bras-Cubas.jpg" alt="Ilíada" width="260px">
+                <a href="https://www.magazineluiza.com.br/livro-iliada/p/228539700/li/llit/?seller_id=olistplus">
+                    <h2 style="color: black;">Mesmorias postrumas de bras cubas</h2>
+                </a>
+            </div>
+        </div>
+        <button class="button" id="nextButton6">↦</button>
+    </div>
+
+    <!-- Container 7 - Aventura -->
+    <h1>Aventura</h1>
+    <div class="container">
+       
+        <button class="button" id="prevButton7">↤</button>
+        <div class="BOOKS" id="booksContainer7">
+            <div class="l1">
+                <img src="https://www.moderna.com.br/data/files/D9/02/CA/FC/ABF29310DABB929338A8A8A8/Capa_Dom%20Quixote_FINAL2-1.jpg" alt="A arte da guerra" width="250px">
+                <a href="https://www.magazineluiza.com.br/livro-a-arte-da-guerra/p/bf75bc4b9k/li/liaj/?seller_id=olistplus">
+                    <h2 style="color: black;">Dom quixote</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_858895-MLU50632114961_072022-O.webp" alt="Platão" width="250px">
+                <a href="https://www.magazineluiza.com.br/livro-platao/p/akdf4dd05e/li/libi/?seller_id=artclubbooks">
+                    <h2 style="color: black;">Harry potter e a criança amaladiçoada</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_987320-MLU77344751946_072024-O.webp" alt="Dragon ball" width="250px">
+                <a href="https://www.martinclaret.com.br/livro/o-principe-2/">
+                    <h2 style="color: black;">Volume 16 Dragon Ball </h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51uNJPlhCzL._SX354_BO1,204,203,200_.jpg" alt="Bíblia Sagrada" width="250px">
+                <a href="https://www.mercadolivre.com.br/biblia-rcm-trinitariana-acf-letra-gigante-editora-sbtb/p/MLB20808066">
+                    <h2 style="color: black;">Senhor dos anéis</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://static.wixstatic.com/media/5801fd_a5aa121c7f0742849f3be2151a9a4ead~mv2.jpg/v1/fit/w_665%2Ch_993%2Cal_c%2Cq_80/file.jpg" alt="Odisseia" width="235px">
+                <a href="https://www.pontofrio.com.br/livro-fisico-a-odisseia-de-homero-texto-integral-1510274635/p/1510274635">
+                    <h2 style="color: black;">O pequeno principe</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://th.bing.com/th?id=OPHS.vAnaeHN008R5MA474C474&w=300&h=300&o=5&pid=21.1" alt="Ilíada" width="320px">
+                <a href="https://www.magazineluiza.com.br/livro-iliada/p/228539700/li/llit/?seller_id=olistplus">
+                    <h2 style="color: black;">Homem aranha : O ultimo confronto</h2>
+                </a>
+            </div>
+         </div>
+         <button class="button" id="nextButton7">↦</button>
+  
+      </div>
+    
+
+    <h1>Mangás</h1>
+    <div class="container">
+        <button class="button" id="prevButton8">↤</button>
+        <div class="BOOKS" id="booksContainer8">
+            <div class="l1">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_987320-MLU77344751946_072024-O.webp" alt="Dragon ball" width="250px">
+                <a href="https://www.martinclaret.com.br/livro/o-principe-2/">
+                    <h2 style="color: black;">Volume 16 Dragon Ball </h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://media.senscritique.com/media/000018352089/source_big/BLAME_Edition_Deluxe_tome_1.jpg" alt="Ilíada" width="250px">
+                <a href="https://www.magazineluiza.com.br/livro-iliada/p/228539700/li/llit/?seller_id=olistplus">
+                    <h2 style="color: black;">Volume 1 Blame!</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://m.media-amazon.com/images/I/71lT36JaUqL._SY425_.jpg" alt="Odisseia" width="250px">
+                <a href="https://www.pontofrio.com.br/livro-fisico-a-odisseia-de-homero-texto-integral-1510274635/p/1510274635">
+                    <h2 style="color: black;"> Volume 10 Neon Genesis Evangelion</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_825570-MLU50450120793_062022-F.webp" alt="Bíblia Sagrada" width="255px">
+                <a href="https://www.mercadolivre.com.br/biblia-rcm-trinitariana-acf-letra-gigante-editora-sbtb/p/MLB20808066">
+                    <h2 style="color: black;">Volume 57 de One piece</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://i.pinimg.com/736x/08/53/02/08530277988c7b5d4363645e4c8765af--ghost-in-the-shell-ghosts.jpg" alt="O príncipe" width="255px">
+                <a href="https://www.martinclaret.com.br/livro/o-principe-2/">
+                    <h2 style="color: black;">Volume 1 The ghost in the shell</h2>
+                </a>
+            </div>
+            <div class="l1">
+                <img src="https://media.senscritique.com/media/000015332347/source_big/Akira.jpg" alt="Platão" width="250px">
+                <a href="https://www.magazineluiza.com.br/livro-platao/p/akdf4dd05e/li/libi/?seller_id=artclubbooks">
+                    <h2 style="color: black;">Akira</h2>
+                </a>
+            </div>
+        </div>
+        <button class="button" id="nextButton8">↦</button>
+         
+        <script src="script.js"></script>
+        <script>
+        document.getElementById('prevButton1').addEventListener('click', function() {
+            document.getElementById('booksContainer1').scrollBy({ left: -300, behavior: 'smooth' });
+        });
+        
+        document.getElementById('nextButton1').addEventListener('click', function() {
+            document.getElementById('booksContainer1').scrollBy({ left: 300, behavior: 'smooth' });
+        });
+        
+        document.getElementById('prevButton2').addEventListener('click', function() {
+            document.getElementById('booksContainer2').scrollBy({ left: -300, behavior: 'smooth' });
+        });
+        
+        document.getElementById('nextButton2').addEventListener('click', function() {
+            document.getElementById('booksContainer2').scrollBy({ left: 300, behavior: 'smooth' });
+        });
+        
+        document.getElementById('prevButton3').addEventListener('click', function() {
+            document.getElementById('booksContainer3').scrollBy({ left: -300, behavior: 'smooth' });
+        });
+        
+        document.getElementById('nextButton3').addEventListener('click', function() {
+            document.getElementById('booksContainer3').scrollBy({ left: 300, behavior: 'smooth' });
+        });
+        document.getElementById('prevButton4').addEventListener('click', function() {
+            document.getElementById('booksContainer4').scrollBy({ left: -300, behavior: 'smooth' });
+        });
+        
+        document.getElementById('nextButton4').addEventListener('click', function() {
+            document.getElementById('booksContainer4').scrollBy({ left: 300, behavior: 'smooth' });
+        });
+        document.getElementById('prevButton5').addEventListener('click', function() {
+            document.getElementById('booksContainer5').scrollBy({ left: -300, behavior: 'smooth' });
+        });
+        
+        document.getElementById('nextButton5').addEventListener('click', function() {
+            document.getElementById('booksContainer5').scrollBy({ left: 300, behavior: 'smooth' });
+        });document.getElementById('prevButton6').addEventListener('click', function() {
+            document.getElementById('booksContainer6').scrollBy({ left: -300, behavior: 'smooth' });
+        });
+        
+        document.getElementById('nextButton6').addEventListener('click', function() {
+            document.getElementById('booksContainer6').scrollBy({ left: 300, behavior: 'smooth' });
+
+        });document.getElementById('prevButton7').addEventListener('click', function() {
+            document.getElementById('booksContainer7').scrollBy({ left: -300, behavior: 'smooth' });
+        });
+        
+        
+        document.getElementById('nextButton7').addEventListener('click', function() {
+            document.getElementById('booksContainer7').scrollBy({ left: 300, behavior: 'smooth' });
+        })
+
+        document.getElementById('prevButton8').addEventListener('click', function() {
+            document.getElementById('booksContainer8').scrollBy({ left: -300, behavior: 'smooth' });
+        });
+        
+        document.getElementById('nextButton8').addEventListener('click', function() {
+            document.getElementById('booksContainer8').scrollBy({ left: 300, behavior: 'smooth' });
+        });
+
+    </script>
+
+<script>
+    // Lista de livros (pode ser expandida ou carregada de um banco de dados no futuro)
+    const books = [
+        { title: "Orgulho e Preconceito", link: "https://th.bing.com/th?id=OPHS.OK%2brlzjjFEhyYg474C474&w=248&h=248&o=5&pid=21.1" },
+        { title: "O Morro dos Ventos Uivantes", link: "./o-morro-dos-ventos-uivantes.html" },
+        { title: "P.S. Eu Te Amo", link: "./ps-eu-te-amo.html" },
+        { title: "Como Eu Era Antes de Você", link: "./como-eu-era-antes.html" },
+        { title: "Um Dia", link: "./um-dia.html" },
+        { title: "Amor Nos Tempos do Cólera", link: "./amor-nos-tempos.html" },
+        { title: "O Diário de uma Paixão", link: "./o-diario-de-uma-paixao.html" },
+        { title:"Volume 16 Dragon Ball", link:"https://http2.mlstatic.com/D_NQ_NP_987320-MLU77344751946_072024-O.webp"},
+        { title:"Biblia sagrada",link :"https://www.mercadolivre.com.br/biblia-rcm-trinitariana-acf-letra-gigante-editora-sbtb/p/MLB20808066"},
+        {title:"A arte da guerra", link:"./aaed2f0c9de630f0e83c1a4da57bd3b5.webp"}
+    ];
+
+    const searchBox = document.getElementById('searchBox');
+    const suggestions = document.getElementById('suggestions');
+
+    // Função para atualizar as sugestões
+    searchBox.addEventListener('input', () => {
+        const query = searchBox.value.toLowerCase();
+        suggestions.innerHTML = ''; // Limpa as sugestões anteriores
+
+        if (query) {
+            const filteredBooks = books.filter(book => book.title.toLowerCase().includes(query));
+            if (filteredBooks.length > 0) {
+                filteredBooks.forEach(book => {
+                    const suggestion = document.createElement('a');
+                    suggestion.href = book.link;
+                    suggestion.textContent = book.title;
+                    suggestions.appendChild(suggestion);
+                });
+                suggestions.style.display = 'block'; // Mostra as sugestões
+            } else {
+                suggestions.style.display = 'none'; // Esconde se não houver resultados
+            }
+        } else {
+            suggestions.style.display = 'none'; // Esconde quando o campo está vazio
+        }
+    });
+
+    // Fecha as sugestões ao clicar fora
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.search-container')) {
+            suggestions.style.display = 'none';
+        }
+    });
+</script>
+
+        
+        
+
+            
+        
+    </section>
+    <br><br>    
+    
+    
+    <section style="background-color: rgb(0, 0, 0); " class="colaboradores"> 
+    <div> 
+
+        <h1 style="font-size: larger; color: aliceblue; text-align: center;
+      height: 300px; font-family: 'Courier New', Courier, monospace;">Nossos colaboradores</h1>
+    <div class="nomes" style="color:white;">
+        <ol >
+            <li>Ryan:
+                <p>Foi o principal contribuidor no quesito de programar este site,sendo assim o programador desta equipe ,contribuindo tambem na  programação em arduino.
+                </p>
+            </li>
+            <li>Daniel: 
+                <p>Foi o que  ajudou na compra de materiais do nosso projeto em arduino.</p>
+                
+            </li>
+            <li>Eduarda:
+                <p>Com sua liderança, fez com que o grupo todo se organizasse e cada um desenpenhasse seu papel de forma correta,foi quem deu sugestões e principalmrente apoio  no site e projeto em arduino com sua icônica  frase:<b style="color: rgb(255, 60, 0);">"Vai dar  certo negrada !".</b></p>
+            </li>
+            <li>Ligiane:
+                <p>Estando presente tambem na área da programação ela fez a pagina de login.</p>
+            </li>
+            <li>Luziely:
+                <p>Foi responsável por fazer as blusas.</p>
+            </li>
+            <li>Edna:
+                <p>Ela fez o palpel de  sempre nos manter ligados ao projeto e nos dizendo quais materiais deveriamos comprar.</p>
+            </li>
+            <li>Hellany:
+                <p>Ficou encarregada de ajudar na maquete do arduino.</p>
+            </li>
+            <li>Fernanda:
+                <p>Foi de grande ajuda na maquete.</p>
+            </li>
+        </ol> 
+        <br><br>
+    </div>
+</div>
+    </section>
+    <main id="Sobre"   class="Sobre">
+        <section>
+            <h1>Seja bem vindo a página de sobre do nosso site!</h1>
+            <p>Nosso site foi desenvilvido com o objetivo de disponibilizar as pessoas que não tem acesso ou o costume da leitura,vendendo tando livros de forma online quanto diponibilizando uma leitura online desses livros,antes de se chamar "LoreOwl𓅓", seu nome era "Fox lore",nome totalmente diferentes porem com uma mesma proposta,durante todo o projeto nossa equipe se esforçou ao maximo para levalo para o nosso publico alvo que sao pessoas de 14 à 30 anos de idade , um grupo de pessoas mais jovens, pois este tipo de pesoas muitas vezees não tem o costume de  buscar a leitura e nosso site esta aqui para disponbilizar isso.</p>
+        </section>
+        <br><br><br><br>
+       <div class="mdl"> <img src="./Captura de tela 2024-10-25 183248.png" alt="">
+       </div> 
+    </main>
+    <main id="Parceiros" class="Parceiros">
+        <section >
+            <h1>Parceiros</h1>
+            <div class="Pars">
+                <div> 
+                    <img src="./Seduc-CE.jpg" alt=""  width="180px"></div>
+                
+                <div> 
+                    <img src="./brasao-horizontal-colorido-1.png" alt="" width="180px">
+                </div>
+            </div>
+            <footer style="text-align: center;">&copy;Ryan chaves </footer>
+    </main>
+</main>
+<script>
+    window.addEventListener('load', () => {
+        const loadingScreen = document.getElementById('loadingScreen');
+        setTimeout(() => {
+            loadingScreen.classList.add('hidden');
+        }, 1000); 
+    });
+</script>
+
+</body>
+</html> 

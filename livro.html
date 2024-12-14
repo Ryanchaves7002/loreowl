@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Livro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Menu">
+        <h1>LoreOwl𓅓</h1>
+        <a href="gestao.html" style="color: black;">Voltar</a>
+    </div>
+
+    <main class="book-details">
+        <div class="l1-image">
+            <img id="bookImg" src="./aaed2f0c9de630f0e83c1a4da57bd3b5.webp" alt="Imagem do Livro">
+        </div>
+        <div class="book-info">
+            <h1 id="bookTitle">Arte da guerra</h1>
+            <h3 id="bookAuthor">Autor: sun-tzu </h3>
+            <p id="bookPrice">Preço: R$39,90</p>
+            <button class="btn">Comprar</button>
+            <button class="btn" onclick="alert('Iniciando leitura...')">Ler</button>
+        </div>
+        
+    </main>
+
+    <script>
+        // Recupera os parâmetros passados
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('bookTitle').innerText = params.get('title');
+        document.getElementById('bookAuthor').innerText = 'Autor: ' + params.get('author');
+        document.getElementById('bookPrice').innerText = 'Preço: R$' + params.get('price');
+        document.getElementById('bookImg').src = params.get('img');
+    </script>
+</body>
+</html>

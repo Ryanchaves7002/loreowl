@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(122, 61, 179),rgb(67, 7, 122),rgb(54, 2, 54));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 1s ease;
+}
+
+#loadingScreen.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#loadingText {
+    color: black;
+    font-size: 5rem;
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Grande', Verdana, sans-serif;
+    text-decoration: dashed;
+    text-shadow: #ffffff;
+    text-rendering: optimizeSpeed;
+    text-overflow: ellipsis;
+}
+
+.Menuul{
+ display: flex;
+ justify-content: space-around;
+ list-style-type: none;
+ font-style: oblique;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px; 
+    position: absolute;
+    right: 20px; 
+}
+
+.search-input {
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+    padding: 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+.search-button {
+    height: 34px;
+    width: 40px;
+    border: none;
+    background-color: rgb(86, 0, 136);
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+.search-button:hover {
+    background-color: rgb(100, 0, 160);
+}
+
+.Principal{
+    background-color:white;
+    font-family:  sans-serif;
+    text-align: center;
+    color: #0a0a0a;
+    padding: 0 ;
+}
+.search-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-input {
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+.suggestions {
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 100;
+    display: none; 
+}
+
+.suggestions a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggestions a:hover {
+    background-color: rgb(86, 0, 136);
+    color: white;
+}
+
+.suggestions a:last-child {
+    border-bottom: none;
+}
+
+
+
+.nomes{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 20px;
+}
+
+.BOOKS {
+    display: flex;
+    gap: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.l1 {
+    min-width: 250px;
+    max-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.l1:hover {
+    transform: scale(1.1);  
+}
+
+.books-container {
+    display: flex;
+    align-items: center; /* Centraliza os elementos verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+}
+
+.button {
+    background-color: #6d6d68; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    padding: 5px 10px; /* Espaçamento interno pequeno */
+    font-size: 20px; /* Tamanho da fonte */
+    width: 40px; /* Define um tamanho fixo pequeno */
+    height: 40px; /* Altura fixa igual à largura */
+    cursor: pointer; /* Muda o cursor ao passar */
+    border-radius: 10%; /* Deixa o botão redondo */
+    display: flex; /* Ajusta o conteúdo ao centro */
+    align-items: center; /* Centraliza o ícone verticalmente */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    box-sizing: border-box; /* Garante que padding não afete tamanho */
+}
+
+.button:hover {
+    background-color: #6d6d68; /* Cor ao passar o mouse */
+}
+
+
+
+.BOOKS::-webkit-scrollbar {
+    height: 10px;
+}
+
+.BOOKS::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+.BOOKS::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+
+.Sobre{
+    background: scroll;
+    background-image:linear-gradient(white,purple);
+    height:1900px;
+    text-align: justify;
+}
+.Sobre h1{
+    text-align: center;
+}
+
+.Pars{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 32px 16px;
+    height: 290px;
+    
+}
+.Parceiros{
+    background-color: rgb(255, 253, 253) ;
+
+
+}
+.Parceiros h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration-color: black;
+    text-shadow: #b05dff;
+}
+.mdl{
+    text-align: center;
+    margin: 0;
+}
+@keyframes rgbEffect {
+    0% {
+      color: purple;
+    }
+    33% {
+      color: #b05dff;
+    }
+    66% {
+      color: rgb(46, 46, 137);
+    }
+    100% {
+      color: purple;
+    }
+  }
+  
+  .rgb-text {
+    font-size: 2em;
+    animation: rgbEffect 3s infinite;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.Menu{
+    height:150px;
+    width:100%;
+    background-color: rgb(86, 0, 136);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-align: center;
+    border-radius: 5px;
+    border: solid transparent 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.books-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.l1-item img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.l1-details {
+    display: flex;
+    
+    padding: 20px;
+}
+
+.l1-image img {
+    width: 300px;
+}
+
+.l1-info {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background: #8400ff;
+    color: white;
+    border: none;
+
+}
+
+  
